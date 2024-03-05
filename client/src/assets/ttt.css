@@ -1,0 +1,105 @@
+
+body {
+    background-color: rgb(255, 255, 255);
+    place-items: center;
+    font-family: 'Tilt Warp', cursive;
+}
+
+h1 {
+    margin: 50px 0 50px 0;
+    font-size: 3rem;
+    color: rgb(83, 244, 255);
+    -webkit-text-stroke: .5px black;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+button {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+#cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.btn {
+
+    font-size: 2rem;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 0;
+    background-color: rgb(206, 203, 203);
+    border-radius: 10px;
+
+}
+
+#find {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 10px;
+    width: 250px;
+    background-color: rgb(0, 0, 0);
+}
+
+.btn:hover {
+    background-color: rgb(226, 228, 230);
+}
+
+button.enabled {
+    opacity: 1;
+}
+
+p {
+    font-size: 2rem;
+}
+
+#oppNameCont{
+    position: absolute; 
+    right: 0;
+}
+
+
+:root {
+    --cardWidth: 200px;
+    --cardHeight: 140px;
+    --cardMargin: 8px;
+}
+  
+.main-battle-list, main-battle-list-closed{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.card {
+width: var(--cardWidth);
+height: var(--cardHeight);
+margin: var(--cardMargin);
+border: 1px solid #ccc;
+border-radius: 8px;
+background: #fff;
+box-sizing: border-box;
+justify-content: space-around;
+display: grid;
+}
+
+.card-info{
+    color: black;
+}
+

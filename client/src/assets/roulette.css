@@ -1,0 +1,101 @@
+.roulette-wrapper{
+position:relative;
+display:flex;
+justify-content:center;
+width:50%;
+margin:0 auto;
+overflow:hidden;
+box-shadow: 0px 0px 32px 10px rgba(0,0,0,0.4);
+}
+
+.roulette-wrapper .selector{
+width:3px;
+background:grey;
+left:50%;
+height:100%;
+transform:translate(-50%,0%);
+position:absolute;
+z-index:2;
+}
+
+.roulette-wrapper .wheel{
+display:flex;
+}
+
+.roulette-wrapper .wheel .row{
+display:flex;
+}
+
+.roulette-wrapper .wheel .row .card{
+height:75px;
+width:75px;
+margin:3px;
+border-radius:8px;
+border-bottom:3px solid rgba(0,0,0,0.2);
+box-shadow: 0px 0px 38px 10px rgba(0,0,0,0.68);
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:1.5em;
+}
+
+.card.red{
+background:#F95146;
+}
+
+.card.black{
+background:#2D3035;
+}
+
+.card.green{
+background:#00C74D;
+}
+
+
+/* User List with Buttons*/
+
+/* Stil für die Container um die Buttons */
+#betButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Stil für die Buttons */
+  #blackBets button,
+  #greenBets button,
+  #redBets button {
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0px 20px 0px 20px;
+  }
+
+  #blackBets button {
+    background-color: #2D3035;
+  }
+  #greenBets button {
+    background-color: #00C74D;
+  }
+  #redBets button {
+    background-color: #F95146;
+  }
+
+  #userBetList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #blackUsers, 
+  #greenUsers, 
+  #redUsers {
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0px 20px 0px 20px;
+    list-style: none;
+  }

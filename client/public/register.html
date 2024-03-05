@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrierung</title>
+</head>
+<body>
+    <h1>Registrierung</h1>
+    <!-- Dein HTML-Code -->
+<form id="registerForm" action="/register" method="POST">
+    <label for="username" class="field-label">Username</label>
+    <input type="text" class="text-field w-input" maxlength="256" name="username" id="username" required />
+
+    <label for="email" class="field-label">E-Mail</label>
+    <input type="email" class="text-field w-input" maxlength="256" name="email" id="email" required />
+
+    <label for="password" class="field-label">Password</label>
+    <input type="password" class="text-field w-input" maxlength="256" name="password" id="password" required />
+
+    <label for="passwordconfirm" class="field-label">Confirm Password</label>
+    <input type="password" class="text-field w-input" maxlength="256" name="passwordconfirm" id="passwordconfirm" required />
+
+    <label class="w-checkbox checkbox-field">
+        <input type="checkbox" id="agb" name="agb" required class="w-checkbox-input" />
+        <span class="checkbox-label w-form-label" for="agb">AGB</span>
+    </label>
+    <button type="submit" id="registerButton">Registrieren</button>
+</form>
+    
+</body>
+</html>

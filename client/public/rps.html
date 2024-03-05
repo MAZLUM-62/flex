@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flex</title>
+    <link rel="stylesheet" href="../src/assets/styles.css" >
+    <link rel="stylesheet" href="../src/assets/header.css" >
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+  
+  <body>
+    <header id ="header" class="main-header"></header>
+    <div id="userchat"></div>
+    <div id="popup"></div>
+    <div id="registerpopup"></div>
+    <div id="game">
+      <div class="main-game-area">
+          <div class="main-game-area-sizing">
+              <h1>Rock Paper Scissors</h1>
+              <div class="game">
+            
+                  <button class="choice" id="rock">Rock</button>
+                  <button class="choice" id="paper">Paper</button>
+                  <button class="choice" id="scissors">Scissors</button>
+              </div>
+              <p>Coins: <span id="coins">Balance 100 Hardcode</span></p>
+              <input type="number" id="bet-amount" placeholder="Enter your bet amount">
+              
+
+              <div id="result"></div>
+              <div class="choices-icon">
+                  <p>{USER}</p>
+                  <div id="user-choice" class="choice-container">
+                    <img class="rps-icons placeholder-icon" src="../src/assets/placeholder.png" alt="Placeholder">
+                  </div>
+                  
+                  <p>{CS2Flex Bot}</p>
+                  <div id="computer-choice" class="choice-container">
+                    <img class="rps-icons placeholder-icon" src="../src/assets/placeholder.png" alt="Placeholder">
+                  </div>
+                </div>
+          </div>
+      </div>
+    </div>
+
+    
+    <script src="/src/components/rps.js" type="module"></script>
+    <script src="/src/components/header.js" type="module"></script>
+    <script src="/src/components/userchat.js" type="module"></script>
+    <script src="/src/components/login-popup.js" type="module"></script>
+    <script src="/src/components/register-popup.js" type="module"></script>
+    <script src="/socket.io/socket.io.js" type="text/javascript" type="module"></script>
+  </body>
+</html>
